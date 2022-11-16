@@ -62,5 +62,5 @@ li {
 
 #ultimo {
     list-style-position: inside;
-    list-style-image: url(Recursos/bola_amarilla.png);
+    list-style-image: url(../img/bola_amarilla.png);
 }
