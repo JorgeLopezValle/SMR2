@@ -1,0 +1,13 @@
+ol {
+    background-color: blue;
+    color: yellow;
+    list-style-type: upper-alpha;
+    width: 80%;
+    height: 350px;
+    min-width: 550px;
+    font-size: 1.5vw;
+}
+
+img {
+    width: 10%;
+}

@@ -1,0 +1,102 @@
+table, th, td {
+    border: 2px solid blue;
+    border-collapse: collapse;
+    border-style: dotted;
+}
+
+/* Ejercicio 1 */
+* {
+    background-color: #8AFB5C;
+}
+
+/* Ejercicio 2 */
+span {
+    background-color: rgb(250, 253, 66);
+}
+
+/* Ejercicio 3 */
+.personales {
+    background-color: pink;
+    color: olive;
+}
+
+/* Ejercicio 4 */
+#titulo {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 34px;
+}
+
+/* Ejercicio 5 */
+#instrucciones + ol li {
+    font-style: italic;
+    
+}
+
+/* Ejercicio 6 */
+.info, span {
+    font-weight: bold;
+}
+
+/* Ejercicio 7 */
+.info {
+    color: orange;
+}
+
+/* Ejercicio 8 */
+li > span {
+    color: grey;
+}
+
+/* Ejercicio 9 */
+p + span {
+    font-style: italic;
+    font-size: 22px;
+}
+
+/* Ejercicio 10 */ 
+ul ~ p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #515218;
+}
+
+/* Ejercicio 11 */
+[title] {
+    font-style: italic;
+}
+
+/* Ejercicio 12 */
+[value=Enviar] {
+    width: 100%;
+}
+
+/* Ejercicio 13 */
+[title~=pulsar] {
+    background-color: rgb(65, 220, 209);
+}
+
+/* Ejercicio 14 */
+[class|=info] {
+    text-align: center;
+    background-color: #515218;
+}
+
+/* Ejercicio 15 */
+[placeholder^=Esc] {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Revisar */
+/* Ejercicio 16 */
+/* Se aplica el color morado en vez del naranja porque tienen la misma especificidad y este css va más abajo que el anterior */
+[class$=info] {
+    color: purple;
+}
+
+/* Ejercicio 17 */
+[title*=para][title*=pod] {
+    color: green;
+}

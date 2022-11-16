@@ -1,0 +1,66 @@
+ul {
+    background-color: rgb(251, 177, 60);
+}
+
+li {
+    background-color: #AFFB8D;
+}
+
+.listm li {
+    background-color: hsl(306, 44%, 77%);
+}
+
+.primero {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+#segundo {
+    list-style-type: circle;
+}
+
+#segundo + .primero {
+    font-weight: bold;
+}
+
+.primero + .listm {
+    list-style-type: none;
+}
+
+.tercero {
+    list-style-position: inside;
+    list-style-type:decimal
+}
+
+.tercero ~ .listm {
+    list-style-type:decimal-leading-zero
+}
+
+#cuarto {
+    list-style-position: inside;
+    list-style-type:lower-latin
+}
+
+#cuarto ~ .listm {
+    list-style-type: upper-latin;
+}
+
+#anidada {
+    font-style: oblique;
+    list-style-position: inside;
+    list-style-type: lower-roman;
+}
+
+#anidada li li {
+    list-style-type: square;
+    color: blue;
+}
+
+#anidada ~ .listm {
+    list-style-type: upper-roman;
+}
+
+#ultimo {
+    list-style-position: inside;
+    list-style-image: url(Recursos/bola_amarilla.png);
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen Jorge López</title>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+        footer {
+        position: fixed;
+        bottom: 5px;
+        left: 0;
+        background-color: #BEBBA1;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        max-height: 20vh;font-size: 2vh;
+        border-radius: 12px;
+        }
+        img {
+        max-height: 10vh;
+        }
+        </style>
+</head>
+<body>
+<header>
+        <h1>Compra automática de billetes de metro</h1>
+</header>
+<nav>
+    <a href="#precios">Precios</a>  <a href="https://www.metromadrid.es/es" target="_blank">MetroMadrid</a>  <a href="media/politica_privacidad.html" target="_blank">Política de privacidad</a>
+</nav>
+<main>
+    <section>
+        <h3>Elección de billete</h3>
+        
+        <form action="mailto:ejemplo@ejemplo.com" method="post" autocomplete="off">
+            <table>
+                <caption>Billete de metro</caption>
+                <thead>
+                    <tr>
+                        <th colspan="3" style="text-align:center">Metro de Madrid... ¡vuela!</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="8">
+                            <ol>
+                                <li>Rellene los datos solicitados</li>
+                                <li>Compruebe que no haya errores</li>
+                                <li>Pulse el botón de resetear para borrar</li>
+                                <li>Pulse en comprar billete al finalizar</li>
+                            </ol>
+                        </td>
+                        <td><label for="fecha">Fecha de uso</label></td>
+                        <td><input type="date" id="fecha" name="fechas"></td>
+                    </tr>
+            <tr>
+                <td><label for="billetes">Número de billetes</label></td>
+                <td><input type="number" id="billetes" name="billetes" min="1" max="8" value="1" title="Introduzca el número de billetes que desea comprar"></td>
+            </tr>
+            <tr>
+                <td><label for="mail">E-mail</label></td>
+                <td><input type="email" id="mail" name="correos" maxlength="75" required placeholder="Introduzca email"></td>
+            </tr>
+            <tr>
+                <td><label for="tlf">Teléfono</label></td>
+                <td><input type="tel" id="tlf" name="telefonos"></td>
+            </tr>
+            <tr>
+                <td>Tipo</td>
+                <td>
+                    <input type="radio" id="1" name="tipos">
+                    <label for="1">Ida y vuelta</label>
+                    <input type="radio" id="2" name="tipos">
+                    <label for="2">Ida</label>
+                </td>
+            </tr>
+            <tr>
+                <td>¿Recibir confirmación?</td>
+                <td>
+                    <input type="checkbox" id="3" name="confirmcorreo">
+                    <label for="3">E-mail</label>
+                    <input type="checkbox" id="4" name="confirmsms">
+                    <label for="4">SMS</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="origenes">Origen</label></td>
+                <td><input list="origen" id="origenes" name="origenes"></td>
+            </tr>
+            <tr>
+                <td><label for="destino">Destino</label></td>
+                <td><input list="origen" id="destino" name="destinos"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><input type="reset" value="Resetear formulario"></td>
+                <td><input type="submit" value="Comprar billete"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <datalist id="origen">
+        <option value="Jarama"></option>
+        <option value="Plaza de España"></option>
+        <option value="Plaza Elíptica"></option>
+        <option value="Plaza de Castilla"></option>
+    </datalist>
+    </form>
+</section>
+</main>
+    <section>
+        <h3 id="precios">Tabla de precios</h3>
+        <pre>Se             publicará
+                                    próximamente</pre>
+        </section>
+    <footer>
+        <figure>
+            <img src="media/logometro.png" alt="logotipo del metro">
+            <figcaption>&#169; Metro de Madrid</figcaption>
+        </figure>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listas de selección</title>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+    </style>  
+</head>
+<body>
+    <form action="mailto:ejemplo@gmail.com" method="post" autocomplete="off">
+        <table>
+            <tr>
+                <td colspan="2"><h2>Trayectos de metro</h2></td>
+            </tr>
+            <tr>
+                <td>Día de la semana</td>
+                <td>Intervalo horario</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="lunes" name="dias" value="Lunes">
+                    <label for="lunes">Lunes</label>
+                    <br>
+                    <input type="radio" id="martes" name="dias" value="Martes">
+                    <label for="lunes">Martes</label>
+                    <br>
+                    <input type="radio" id="miercoles" name="dias" value="Miercoles">
+                    <label for="miercoles">Miércoles</label>
+                    <br>
+                    <input type="radio" id="jueves" name="dias" value="Jueves">
+                    <label for="jueves">Jueves</label>
+                    <br>
+                    <input type="radio" id="viernes" name="dias" value="Viernes">
+                    <label for="viernes">Viernes</label>
+                    <br>
+                    <input type="radio" id="sabado" name="dias" value="Sabado" checked>
+                    <label for="sabado">Sábado</label>
+                    <br>
+                    <input type="radio" id="domingo" name="dias" value="domingo">
+                    <label for="domingo">Domingo</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="mañana" name="horarios">
+                    <label for="mañana">Mañana</label>
+                    <input type="checkbox" id="tarde" name="horarios">
+                    <label for="tarde">Tarde</label>
+                    <input type="checkbox" id="nocturno" name="horarios">
+                    <label for="nocturno">Nocturno</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Estación de origen</td>
+                <td>Estación de destino</td>
+            </tr>
+            <tr>
+                <td>
+                    <datalist id="estaciones1">
+                        <option value="Estación 1"></option>
+                        <option value="Estación 2"></option>
+                        <option value="Estación 3"></option>
+                        <option value="Estación 4"></option>
+                    </datalist>
+                    <label for="estacion1"></label>
+                    <input list="estaciones1" name="estaciones1" id="estacion1" placeholder="Seleccione origen">
+                </td>
+                <td>
+                    <label for="estacion2"></label>
+                    <input list="estaciones1" name="estaciones2" id="estacion2" placeholder="Seleccione destino">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Calcular ruta"></td>
+                <td><input type="reset" value="Limpiar fomulario"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+html {
+    background-color: grey;
+    color: purple;
+}
+
+span {
+    background-color: orange;
+    color: blue;
+}
+
+#gm {
+    background-color: yellow;
+
+}
+
+#gs {
+    background-color: green;
+}
+
+.titulo {
+    background-color: pink;
+    color: white;
+}

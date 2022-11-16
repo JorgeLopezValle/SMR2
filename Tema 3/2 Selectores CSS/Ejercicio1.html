@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Selectores CSS</title>
+    <meta charset="UTF-8">
+    <link href="Ejercicio1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <p id="titulo">Matriculación de alumnos</p>
+    <span>Informática y Comunicaciones</span>
+    <form method="POST" action="#" autocomplete="on">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Datos identificativos</th>
+                    <th colspan="2">Datos adicionales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="personales">Nombre</td>
+                    <td class="personales"><input type="text" placeholder="Escriba su nombre"></td>
+                    <td title="Indique su sexo">Sexo</td>
+                    <td title="Indica tu sexo"><input id="hombre" type="radio" name="sexo"><label for="hombre">Hombre</label><input id="mujer" type="radio" name="sexo">><label for="mujer">Mujer</label></td>
+                </tr>
+                <tr>
+                    <td class="personales">Apellidos</td>
+                    <td class="personales"><input type="text" placeholder="Escriba sus apellidos"></td>
+                    <td>¿Mayor de edad?</td>
+                    <td><input id="mayor" type="checkbox" name="mayor"><label for="mayor">Soy mayor de edad</label></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="submit" value="Enviar" title="Debes pulsar para enviar"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <p id="instrucciones" class="info">Instrucciones</p>
+    <ol>
+        <li>Rellenar el formulario</li>
+        <li>Dar al botón "Enviar"</li>
+        <li>Estudiar durante todo el curso</li>
+    </ol>
+    <p class="contacto info">Contacto</p>
+    <ul>
+        <li><span>Mañana</span>
+            <ul>
+                <li title="Teléfono para poder contactar">Teléfono: +34 912 345 678</li>
+            </ul>
+        </li>
+        <li><span>Tarde</span>
+            <ul>
+                <li title="Mail para poder contactar">Mail: <a href="mailto:marcos.martinezrus@educa.madrid.org">Enviar mail</a></li>
+            </ul>
+        </li>
+    </ul>
+    <p>Gracias por matricularte</p>
+</body>
+</html>

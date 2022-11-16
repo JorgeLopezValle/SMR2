@@ -1,0 +1,56 @@
+* {
+    font-family: "Lucida Handwriting", Arial, serif;
+}
+
+.clase1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.clase2 {
+    color: blue;
+    text-shadow: 3px 9px green;
+}
+
+.clase3 {
+    font-family: "Times New Roman", monospace;
+}
+
+.clase6 {
+    color: rgb(80, 125, 100);
+    font-size: 1vw;
+}
+
+.clase4 {
+    font-size: 15px;
+}
+
+.clase5 {
+    font-size: 2em;
+}
+
+.clase9 {
+    text-indent: 25px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    color: #123456;
+    text-transform: capitalize;
+}
+
+/* Revisar */
+.clase10 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: yellow;
+}
+
+.clase7 {
+    text-align: right;
+    text-decoration: underline;
+}
+
+.clase8 {
+    text-align:justify;
+    text-decoration: line-through;
+    
+}

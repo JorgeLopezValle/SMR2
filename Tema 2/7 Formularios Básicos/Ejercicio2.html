@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+    </style>       
+</head>
+<body>
+    <h3>Formulario de registro</h3>
+    <form method="post" action="mailto:ejemplo@gmail.com" autocomplete="off">
+        <table>
+            <tr>
+                <td><label for="usuario">Usuario</label></td>
+                <td><input type="text" id="usuario" name="usuarios"></td>
+                <td><label for="profesion">Profesión</label></td>
+                <td><input type="text" id="profesion" name="profesiones" value="Gamer"></td>
+            </tr>
+            <tr>
+                <td><label for="contraseña">Contraseña</label></td>
+                <td><input type="password" id="contraseña" name="contraseñas"></td>
+                <td rowspan="2">Intereses</td>
+                <td rowspan="2">
+                    <input type="checkbox" name="checklist1" id="videojuegos" checked>
+                    <label for="videojuegos">Videojuegos</label>
+                    <br>
+                    <input type="checkbox" name="checklist2" id="cine">
+                    <label for="cine">Cine</label>
+                </td>
+            </tr>
+            <tr>
+                <td>¿Eres mayor de edad?</td>
+                <td>
+                    <input type="radio" name="radio" id="si">
+                    <label for="si">Sí</label>
+                    <input type="radio" name="radio" id="no" checked>
+                    <label for="no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><label for="observaciones">Observaciones</label></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                <textarea name="Observaciones" id="observaciones" cols="74" rows="4" placeholder="Indique las observaciones que considere oportunas"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="reset" value="Borar datos">
+                </td>
+                <td colspan="2"> <input type="submit"   value="Enviar datos"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
