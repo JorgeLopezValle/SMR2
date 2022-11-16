@@ -63,6 +63,7 @@ h2:first-of-type {
     text-decoration: overline underline;
 }
 
+/* Revisar */
 /* Ejercicio 13 */
 li:last-of-type:first-child {
     letter-spacing: 5px;
@@ -70,3 +71,11 @@ li:last-of-type:first-child {
     list-style-position: inside;
     list-style-type: lower-roman;
 }
+
+/* Revisar */
+/* Ejercicio 14 */
+tbody tr:nth-of-type(even) {
+    background-color: #FCDD74;
+}
+
+/* Ejercicio 15 */
