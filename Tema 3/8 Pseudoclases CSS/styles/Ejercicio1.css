@@ -1,0 +1,79 @@
+table, th, td {
+    border: 8px inset grey;
+    border-collapse: collapse;
+    }
+
+/* Ejercicio 3 */
+a:link {
+    text-decoration: none;
+    color: green;
+    font-style: italic;
+    font-family: "Times New Roman", Arial
+}
+
+/* Ejercicio 4 */
+a:visited {
+    color: grey;
+}
+
+/* Ejercicio 5*/
+a:hover {
+    background-color: yellow;
+    font-size: 2em;
+}
+
+/* Ejercicio 6 */
+a:active {
+    background-color: red;
+}
+
+/* Ejercicio 7 */
+span:first-child {
+    font-weight: bold;
+    color: blue;
+}
+
+/* Ejercicio 8 */
+td:last-child {
+    background-color: yellow;
+    text-align: center;
+}
+
+/* Ejercicio 9 */
+td:first-child:hover {
+    font-weight: bold;
+    cursor: zoom-in;
+}
+
+/* Ejercicio 10 */
+td:nth-child(1) {
+    background-color: #ABCDEF;
+    text-align: center;
+}
+
+/* Ejercicio 11 */
+li:only-child {
+    text-transform: uppercase;
+}
+
+/* Ejercicio 12 */
+h2:first-of-type {
+    font-size: 4vw;
+    color: rgba (110, 220, 110, 0.5);
+    text-decoration: overline underline;
+}
+
+/* Ejercicio 13 */
+li:last-of-type:first-child {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    list-style-position: inside;
+    list-style-type: lower-roman;
+}
+
+/* Revisar */
+/* Ejercicio 14 */
+tbody > tr:nth-of-type(even) {
+    background-color: #FCDD74;
+}
+
