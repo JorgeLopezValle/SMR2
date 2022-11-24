@@ -1,0 +1,122 @@
+/* La página tiene que tener una altura del 100%. El fondo de la página tiene un gradiente lineal desde top hasta bottom de la página de los colores #ABCDEF y #F7F972. */
+html, body {
+    height: 100%;
+    background-image: linear-gradient(#ABCDEF, #F7F972);
+}
+/* El texto de la cabecera debe… */
+header > h1 {
+    font-size: 4vw;
+    color: pink;
+    text-shadow: 1px 1px blue;
+    text-align: center;
+    margin-bottom: 5px;
+}
+/* Toda la tabla tiene que tener un borde de 3px, sólido de color transparente. */
+table, td, th {
+    border: 3px solid transparent;
+}
+/* Además, la tabla tiene que ocupar el 100% del ancho disponible, tener un color de fondo blanco y los bordes redondeados con un valor del 2% de la anchura de la ventana gráfica. */
+table {
+    width: 100%;
+    background-color: white;
+    border-radius: 2vw;
+}
+/* Toda celda que no sea de la cabecera, debe… */
+td {
+    text-align: center;
+    font-size: 1.25vw;
+    border-radius: 2vw;
+}
+/* Las celdas de la cabecera… */
+    thead th {
+    font-size: 2.2vw;
+    font-family: "Palatino Linotype", "Courier New", serif;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+}
+/* Los extremos de la primera fila de la tabla, la de la cabecera, deben estar redondeados. */
+table tr:first-child th:first-child, table tr:first-child th:last-child{
+     border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+}
+/* Las filas impares del cuerpo de la tabla deben tener de color de fondo #FFE08A. */
+tbody tr:nth-of-type(odd) {
+    background-color: #FFE08A;
+}
+/* Las filas pares del cuerpo de la tabla deben tener de color de fondo #89A8FF. */
+tbody tr:nth-of-type(even) {
+    background-color: #89A8FF;
+}
+/* Las columnas de datos personales deben ocupar el 80% de la tabla, es decir, de su contenedor padre. */
+th#datos-personales {
+    width: 80%;
+}
+/* La columna de datos adicionales debe ocupar el resto del ancho de la tabla. */
+th#datos-adicionales {
+    width: 20%;
+}
+/* La celda de “Información acerca de…” debe tener color de fondo #F9F963. Si de aquí en adelante, algo no te funciona, prueba a poner la posición a relativa. */
+td#observaciones-titulo {
+    background-color: #F9F963;
+    position: relative;
+}
+/* El mensaje "Información acerca de..." */
+#observaciones-titulo > label{
+    font-size: 1.25vw;
+    font-weight: bold;
+    text-decoration: underline;
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    padding-left: 5%;
+}
+/* La celda del textarea debe tener de color de fondo #97971D */
+td#observaciones-mensaje {
+    background-color: #97971D;
+}
+/* Cualquier entrada de información de tipo texto, número o email debe... */
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10vw;
+    padding-left: 2vw;
+}
+/* El textarea no se debe poder redimensionar (cambiar su tamaño establecido) y la altura debe ser de un 8% de la altura de la ventana gráfica. */
+td#observaciones-mensaje > textarea {
+    resize: none;
+    height: 8vh;
+    }
+ /* La imagen debe... */
+    footer > img {
+    height: 20vh;
+    display: block;
+    margin: 2% auto;
+    border-radius: 50%;
+    background-color: white;
+    }
+/* Cualquier botón debe… */
+    button {
+    width: 100%;
+    border: none;
+    border-radius: 10vw;
+    padding: 8px;
+    font-style: italic;
+    }
+/* El botón de darse de alta debe tener de color de fondo #C3FD6E */
+tfoot [type="submit"] {
+    background-color: #C3FD6E;
+}
+/* El botón de borrar datos debe tener color de fondo #FD6ED7 */
+tfoot [type="reset"] {
+    background-color: #FD6ED7;
+}
+/* Al pasar el ratón por encima de un botón se tiene que poner de color amarillo y el cursor debe ser una mano */
+button:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+                        

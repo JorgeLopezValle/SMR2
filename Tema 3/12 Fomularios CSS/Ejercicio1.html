@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>RFED</title>
+    <meta charset="UTF-8">
+    <link href="styles/Ejercicio1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Alta de deportista</h1>
+    </header>
+    <main>
+        <form action="mailto:marcos.martinezrus@educa.madrid.org" method="post" autocomplete="off">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3" id="datospersonales">Datos personales</th>
+                    <th id="datos-adicionales">Datos adicionales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="nombre">Nombre</label></td>
+                    <td><label for="apellidos">Apellidos</label></td>
+                    <td><label for="dni">DNI</label></td>
+                    <td><label>Tipo inscripción</label></td>       
+                </tr>
+                <tr>
+                    <td><input id="nombre" type="text" required="required"></td>
+                    <td><input id="apellidos" type="text" required="required"></td> 
+                    <td><input id="dni" type="text" required="required" pattern="[0-9]{8}-[A-B]{1}"></td>
+                    <td>
+                        <select name="tipo_inscripcion" disabled="disabled">
+                        <option value="primera">1ª inscripción</option>
+                        <option value="antiguo">Ya matriculado</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Sexo</label></td>
+                    <td><label for="email">Email</label></td>
+                    <td rowspan="2">
+                        <input type="checkbox" id="beca" name="beca" checked="checked">
+                        <label for="beca">Con beca</label>
+                    </td>
+                    <td><label>Código deporte</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="hombre" name="sexo" value="hombre"><label for="hombre">Hombre</label>
+                        <input type="radio" id="mujer" name="sexo" value="mujer"><label for="mujer">Mujer</label>
+                    </td>
+                    <td><input id="email" type="email"></td>
+                    <td><input type="text" value="Generando..." readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" rowspan="2" id="observaciones-titulo">Información acerca de sus hábitos deportivos</td>
+                    <td>
+                        <label for="anyos">Años de practica deportiva</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input id="anyos" type="number" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" id="observacionesmensaje">
+                        <textarea id="info-deporte" placeholder="Realice una breve presentación sobre sus condiciones deportivas"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot> 
+                <tr>
+                    <td><button type="reset">Borrar datos</button></td>
+                    <td colspan="3"><button type="submit">Darse de alta</button></td>
+                </tr>
+            </tfoot>
+        </table>
+        </form>
+    </main>
+    <footer>
+        <img src="img/deporte.png" alt="Imagen de personas practicando distintos deportes">
+    </footer>
+</body>
+</html>
+                            
+                    
+        
