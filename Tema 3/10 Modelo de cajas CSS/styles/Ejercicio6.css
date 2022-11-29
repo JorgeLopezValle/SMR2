@@ -37,6 +37,30 @@ table {
     
 }
 
+.principal td {
+    padding: 20px;
+}
+
+th:last-child, tfoot > tr {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background-color: #F5FA7F;
+    font-weight: bold;
+    font-style: italic;
+}
+
+tbody td:nth-child(1), tfoot td:nth-child(1) {
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #D4F3FC;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #7FDCF8;
+}
+
 #modulo {
     padding-top: 15px;
     padding-bottom: 5px;
