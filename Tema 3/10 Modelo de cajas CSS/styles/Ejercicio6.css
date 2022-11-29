@@ -2,26 +2,38 @@
     font-size: 1,3vw;
 }
 
-table, th, td {
-    border: 13px solid black;
-    border-collapse: collapse;
-    text-align: center;
-    size: 70vw;
-}
-
 body {
-    background: linear-gradient(to right, rgba(9,9,121,1), rgba(0,212,255,1) 35%, rgba(247,245,89,1));
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 35%, rgba(247,245,89,1) 100%);
 }
 
-h1 {
+h3 {
     font-size: 2.5vw;
+    color: white;
     margin-bottom: 4%;
     font-family: "Lucida Handwriting", Courier, serif;
 }
 
+table, th, td {
+    border-style: inset;
+    border-width: 13px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sin-bordes-top-left {
+    border-top-style: hidden;
+    border-left-style: hidden;
+}
+
 .principal {
+    font-weight: bold;
     background-color: #ABCDEF;
-    padding: 20px
     
 }
 
