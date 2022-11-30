@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    background: linear-gradient(to bottom, #ABCDEF, #F7F972);
+}
+
+header > h1 {
+    font-size: 4vw;
+    color: pink;
+    text-shadow: 1px 1px blue;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+table, th, td {
+    border: 3px solid transparent;
+    width: 100%;
+    background-color: white;
+    border-radius: 2vw;
+}
+
+td {
+    text-align: center;
+    font-size: 1.25vw;
+    border-radius: 2vw;
+}
+
+thead th {
+    size: 2.2vw;
+    font-family: "Palatino Linotype", "Courier New", serif;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+}
+
+table tr:first-child th:first-child, table tr:first-child th:last-child {
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #FFE08A;
+}
+
+tr:nth-of-type(even) {
+    background-color: #89A8FF;
+}
+
+th#datos-personales {
+    width: 80%;
+}
+
+th#datos-adicionales {
+    width: 20%;
+}
+
+td#observaciones-titulo {
+    background-color: #F9F963;
+    position: relative
+}
+
+#observaciones-titulo > label {
+    font-size: 1.25vw;
+    font-weight: bold;
+    text-decoration: underline;
+    position:absolute;
+    left: 0;
+    bottom: 15%;
+    padding-left: 5%;
+}
+
+textarea {
+    background-color: #97971D;
+}

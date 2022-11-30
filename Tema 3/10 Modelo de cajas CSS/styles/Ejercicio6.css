@@ -1,0 +1,72 @@
+* {
+    font-size: 1,3vw;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 35%, rgba(247,245,89,1) 100%);
+}
+
+h3 {
+    font-size: 2.5vw;
+    color: white;
+    margin-bottom: 4%;
+    font-family: "Lucida Handwriting", Courier, serif;
+}
+
+table, th, td {
+    border-style: inset;
+    border-width: 13px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sin-bordes-top-left {
+    border-top-style: hidden;
+    border-left-style: hidden;
+}
+
+.principal {
+    font-weight: bold;
+    background-color: #ABCDEF;
+    
+}
+
+.principal td {
+    padding: 20px;
+}
+
+th:last-child, tfoot > tr {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background-color: #F5FA7F;
+    font-weight: bold;
+    font-style: italic;
+}
+
+tbody td:nth-child(1), tfoot td:nth-child(1) {
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #D4F3FC;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #7FDCF8;
+}
+
+#modulo {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background-color: #F5FA7F;
+}
+
+tr > td {
+    text-align: left;
+}
